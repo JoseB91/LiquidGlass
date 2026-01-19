@@ -31,7 +31,7 @@ struct GlassCardsView: View {
 
                     // Cards pequeñas en fila
                     LazyVGrid(columns: columns, spacing: 12) {
-                        ForEach(items.suffix(3)) { item in
+                        ForEach(items.suffix(2)) { item in
                             GlassCard(item: item, size: .small)
                         }
                     }

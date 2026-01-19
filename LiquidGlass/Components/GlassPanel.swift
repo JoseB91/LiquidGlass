@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct GlassPanel<Content: View>: View {
-    let content: Content
-
-    init(@ViewBuilder content: () -> Content) {
-        self.content = content()
-    }
+    @ViewBuilder let content: Content
 
     var body: some View {
         content
             .padding()
-            .frame(maxWidth: .infinity)
+            .frame(maxWidth: .infinity, alignment: .leading)
             .glassEffect(in: .rect(cornerRadius: 16))
     }
 }

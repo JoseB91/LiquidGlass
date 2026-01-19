@@ -32,6 +32,6 @@ extension CardItem {
         CardItem(title: "Descargas", subtitle: "12 nuevos", icon: "arrow.down.circle.fill", color: "green"),
         CardItem(title: "Favoritos", subtitle: "67 items", icon: "star.fill", color: "yellow"),
         CardItem(title: "Recientes", subtitle: "Hoy", icon: "clock.fill", color: "gray"),
-        CardItem(title: "Compartido", subtitle: "8 personas", icon: "person.2.fill", color: "cyan")
+//        CardItem(title: "Compartido", subtitle: "8 personas", icon: "person.2.fill", color: "cyan")
     ]
 }

@@ -59,8 +59,6 @@ struct GlassCard: View {
                 .font(.system(size: size.iconSize, weight: .semibold))
                 .foregroundStyle(iconColor)
 
-            Spacer()
-
             VStack(alignment: .leading, spacing: 4) {
                 Text(item.title)
                     .font(.headline)

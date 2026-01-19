@@ -91,6 +91,7 @@ struct MorphItemRow: View {
 struct MorphDetailView: View {
     let item: CardItem
     let namespace: Namespace.ID
+    @State private var isFavorite = false
 
     private var iconColor: Color {
         switch item.color {
@@ -144,7 +145,7 @@ struct MorphDetailView: View {
                     HStack {
                         Label("Favorito", systemImage: "star.fill")
                         Spacer()
-                        Toggle("", isOn: .constant(false))
+                        Toggle("", isOn: $isFavorite)
                     }
                 }
 
