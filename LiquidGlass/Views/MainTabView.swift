@@ -17,8 +17,18 @@ struct MainTabView: View {
             Tab("Morph", systemImage: "arrow.triangle.2.circlepath") {
                 MorphTransitionView()
             }
+            Tab("Cards", systemImage: "rectangle.grid.2x2") {
+                GlassCardsView()
+            }
+
+            Tab("Morph", systemImage: "arrow.triangle.2.circlepath") {
+                MorphTransitionView()
+            }
+            Tab("Cards", systemImage: "rectangle.grid.2x2") {
+                GlassCardsView()
+            }
         }
-        .tabBarMinimizeBehavior(.onScrollDown)
+        .tabBarMinimizeBehavior(.automatic)
     }
 }
 

@@ -67,13 +67,13 @@ LiquidGlass/
 #### Tareas:
 - [x] Crear vista con lista de items (`MorphItemRow`)
 - [x] Implementar vista de detalle (`MorphDetailView`)
-- [x] Configurar `glassEffectID` en elementos origen
-- [x] Configurar `GlassEffectContainer` en vista destino
+- [x] Configurar `glassEffectID` en elementos origen y destino con el mismo ID
 - [x] Implementar navegación con transición morph animada
 
 #### Implementación:
-- `MorphItemRow`: Fila con icono glass que tiene `.glassEffectID(item.id)`
-- `MorphDetailView`: Vista de detalle con `GlassEffectContainer` que envuelve el icono destino
+- `MorphItemRow`: Fila con icono glass que tiene `.glassEffectID(item.id, in: namespace)`
+- `MorphDetailView`: Vista de detalle con el mismo `.glassEffectID(item.id, in: namespace)` en el icono destino
+- Se usa `@Namespace` para coordinar las transiciones entre vistas
 - Navegación con `NavigationLink(value:)` y `.navigationDestination`
 - El icono se anima desde 44x44 en la lista hasta 120x120 en el detalle
 

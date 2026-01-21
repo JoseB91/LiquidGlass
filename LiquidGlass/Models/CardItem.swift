@@ -32,6 +32,12 @@ extension CardItem {
         CardItem(title: "Descargas", subtitle: "12 nuevos", icon: "arrow.down.circle.fill", color: "green"),
         CardItem(title: "Favoritos", subtitle: "67 items", icon: "star.fill", color: "yellow"),
         CardItem(title: "Recientes", subtitle: "Hoy", icon: "clock.fill", color: "gray"),
-//        CardItem(title: "Compartido", subtitle: "8 personas", icon: "person.2.fill", color: "cyan")
+        CardItem(title: "Compartido", subtitle: "8 personas", icon: "person.2.fill", color: "cyan"),
+        CardItem(title: "Archivos", subtitle: "156 items", icon: "folder.fill", color: "blue"),
+        CardItem(title: "Notas", subtitle: "42 notas", icon: "note.text", color: "yellow"),
+        CardItem(title: "Recordatorios", subtitle: "18 pendientes", icon: "checklist", color: "orange"),
+        CardItem(title: "Calendario", subtitle: "3 eventos hoy", icon: "calendar", color: "pink"),
+        CardItem(title: "Contactos", subtitle: "892 contactos", icon: "person.crop.circle.fill", color: "green"),
+        CardItem(title: "Mensajes", subtitle: "5 sin leer", icon: "message.fill", color: "purple")
     ]
 }
